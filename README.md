@@ -1,5 +1,6 @@
 # CollaborationTennis
 Third Assignment of DRL
+Credit to Alexis Cook DRL repository for the DDPG algorithm and the ModelV02.py set up.
 
 2 DDPG agent algorithm trained on the Tennis environment of Unity
 
