@@ -15,7 +15,7 @@ checkpoint_actorA.pth & checkpoint_actorB.pth: A trained actor for the DDPG mode
 checkpoint_criticA.pth &checkpoint_criticA.pth:  trained critic actor for both agent A&B 
 DDPG model ModelV02.py:An actor-critic model build on a Deep neural network architecture with a tentative batch normalization and modified NN parameters. 
 
-ddpg_agent3.py: An agent class that implements the DDPG algorithm. Agent class inherits the Qnetwork class in ModelV02.py. this has been modified from the orifinal ddpg_agent.py from the DRL repository 
+ddpg_agent3.py: An agent class that implements the DDPG algorithm. Agent class inherits the Qnetwork class in ModelV02.py. this has been modified from the orifinal ddpg_agent.py from the DRL repository. It also receive the Replay Buffer as an input for shared experiences with other agents
 Collaboration DDPG.pdf: Report describing model implementation, results and potential improvements
 
 the forward method overrides the nn.module forward method as prescribed in the documentation the forward method does not need to be called explicitly
