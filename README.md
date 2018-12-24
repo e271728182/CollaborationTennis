@@ -1,7 +1,7 @@
 # CollaborationTennis
 Third Assignment of DRL
 Credit to Alexis Cook's DRL repository for the DDPG algorithm and the Model.py set up.
-
+Credit to this blog for discussing the general architecture about higher number of nodes and using dropouts :https://medium.com/@kinwo/learning-to-play-tennis-from-scratch-with-self-play-using-ddpg-ac7389eb980e
 A DDPG agent algorithm trained on the Tennis environment of Unity
 
 This reportory contains files used to build a deep reinforcement learning network to solve the continuous control task . 2 agetns
