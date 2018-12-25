@@ -13,9 +13,10 @@ Tennis game description: the state space is a vector of 24 dimensions that descr
 Description of files used
 the 5 files below are used to build & train the models and have dependencies from Pytorch, Numpy, namedTuples,UnityEnvironment,Gym and Collections.
 
-checkpoint_actor.pth : A trained actor for the DDPG model 
-checkpoint_critic.pth :  trained critic for the DDPG model
+checkpoint_actor69.pth checkpoint_actor71.pth: A trained actor for the DDPG model A&B respectively
+checkpoint_criti69c.pth checkpoint_criti71c.pth :  trained critic for the DDPG model A&B respectively
 Model.py:An actor-critic model build on a Deep neural network architecture with a tentative batch normalization and modified NN parameters. 
+MADDPG.py: A MADDPG model which takes a list of DDPG as inputs and a a memory object. DDPGs share the common memory and the DDPG loops through the agents
 
 ddpg_agent4.py: An agent class that implements the DDPG algorithm. Agent class inherits the Qnetwork class in Model.py. this has been modified from the orifinal ddpg_agent.py from the Alexis Cook's DRL repository. 
 Collaboration DDPG.pdf: Report describing model implementation, results and potential improvements
