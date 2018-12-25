@@ -71,10 +71,6 @@ class Agentv04():
     def reset(self):
         self.noise.reset()
 
-    def learnNiceThings(self):
-        if len(self.memory) > BATCH_SIZE:
-            experiences = self.memory.sample()
-            self.learn(experiences, GAMMA)
         
     def learn(self, experiences, gamma):
         """Update policy and value parameters using given batch of experience tuples.
